@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./scripts.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Calculadora</title>
+</head>
+<body>
+
+	<div id="calculadora">
+
+		<div class="visor">
+			<div id="valor_op"></div>
+			<div class="visor_baixo">
+				<div id="a"></div>
+				<div id="valor">0</div>	
+			</div>
+		</div>
+
+		<div class="teclado">
+			<a id="operadores" href="#" onclick="apagarMemoria()" onmouseover="info(3)" onmouseout="info_out();">MC</a>
+			<a id="operadores" href="#" onclick="memoriaSalva()"  onmouseover="info(4)" onmouseout="info_out();">MR</a>
+			<a id="operadores" href="#" onclick="guardarMemoria()"  onmouseover="info(5)" onmouseout="info_out();">M</a>
+			<a id="operadores" href="#" onclick="PositivoNegativo()"  onmouseover="info(6)" onmouseout="info_out();">+/-</a>
+			<a id="operadores" href="#" onclick="apagar()"  onmouseover="info(7)" onmouseout="info_out();">C</a>
+			<a href="#" onclick="botao7();">7</a>
+			<a href="#" onclick="botao8();">8</a>
+			<a href="#" onclick="botao9();">9</a>
+			<a id="operadores" href="#" onclick="dividir()"  onmouseover="info(10)" onmouseout="info_out();">/</a>
+			<a id="operadores" href="#" onclick="raizQuadrada()" onmouseover="info(2)" onmouseout="info_out();">V</a>
+			<a href="#" onclick="botao4();">4</a>
+			<a href="#" onclick="botao5();">5</a>
+			<a href="#" onclick="botao6();">6</a>
+			<a id="operadores" href="#" onclick="multiplicar()"  onmouseover="info(11)" onmouseout="info_out();">x</a>
+			<a id="operadores" href="#" onclick="porcento()"   onmouseover="info(8)" onmouseout="info_out();">%</a>
+			<a href="#" onclick="botao1();">1</a>
+			<a href="#" onclick="botao2();">2</a>
+			<a href="#" onclick="botao3();">3</a>
+			<a id="operadores" href="#" onclick="menos()"  onmouseover="info(12)" onmouseout="info_out();">-</a>
+			<a id="operadores" href="#" onclick="umDivididoPor()" onmouseover="info(1)" onmouseout="info_out()";>1/x</a>
+			<a href="#" onclick="botao0();">0</a>
+			<a href="#" onclick="ponto();">.</a>
+			<a id="operadores" href="#" onclick="apagarUmNumero()"  onmouseover="info(9)" onmouseout="info_out();">Del</a>
+			<a id="operadores" href="#" onclick="mais()"  onmouseover="info(13)" onmouseout="info_out();">+</a>
+			<a id="operadores" href="#" onclick="igual();">=</a>
+		</div>	
+	</div>
+
+	<div id="info_botao">
+
+	</div>
+</body>
+</html>
